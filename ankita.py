@@ -3,8 +3,9 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-# Load dataset
-df = pd.read_csv("Datasets/mutual_funds_india.csv")
+# Load dataset from GitHub raw URL
+url = "https://raw.githubusercontent.com/your-username/your-repo/main/Datasets/mutual_funds_india.csv"
+df = pd.read_csv(url)
 df.columns = df.columns.str.replace(" ", "")
 
 # App title
@@ -33,3 +34,5 @@ plt.ylabel("1-Year Return (%)")
 plt.xlabel("Mutual Fund")
 plt.title(f"1-Year Returns for {amc} in {category}")
 st.pyplot(plt)
+
+
