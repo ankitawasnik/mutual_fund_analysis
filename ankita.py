@@ -3,7 +3,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-# Load dataset from GitHub raw URL
+# https://github.com/ankitawasnik/mutual_fund_analysis/blob/main/mutual_funds_india.csv
 url = "https://raw.githubusercontent.com/your-username/your-repo/main/Datasets/mutual_funds_india.csv"
 df = pd.read_csv(url)
 df.columns = df.columns.str.replace(" ", "")
